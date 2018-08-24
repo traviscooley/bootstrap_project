@@ -22,47 +22,70 @@ body {
 
 /*Nav-bar of page*/
 
+
 /*Top-bar*/
+
 .top-bar {
     padding-top: 5px;
     background-color: #f5f5f5;
 }
 .top-bar-inner ul {
-    list-style: none;
+    padding: 0;
 }
 .top-bar-inner ul li {
+    list-style: none;
     display: inline;
-    margin-right: 10px;
+    margin-right: 15px;
+    padding-left: 5px;
 }
 .top-bar-inner ul a {
     text-decoration: none;
     color: gray;
 }
 .top-bar-inner p {
+    text-align: right;
     color: gray;
 }
 .top-bar-inner p a {
     text-decoration: none;
     color: #14c0c9;
 }
+.top-bar-inner li i {
+    margin-right: 10px;
+}
 /**/
 
 
 /*User-Info-Bar*/
-.nav-bar ul {
+
+.nav-bar {
+    padding-bottom: 10px;
+}
+.nav-bar-inner {
+    padding-bottom: 20px;
+}
+.nav-bar-inner ul {
     list-style: none;
+    text-align: right;
 }
-.nav-bar ul li {
+.nav-bar-inner ul li {
     display: inline;
-    margin-right: 5px;
 }
-.nav-bar a {
+.nav-bar-inner a {
     text-decoration: none;
 }
 .cur-lang {
-    background-color: #f5f5f5;
+    display: inline;
+    margin-right: 1px;
+}
+.cur-lang select {
+    -webkit-appearance: none;
+    border: none;
+    background: #f5f5f5;
     color: gray;
     padding: 10px;
+    text-align: center;
+    cursor: pointer;
 }
 .users-status {
     margin-top: 50px;
@@ -71,6 +94,7 @@ body {
     background-color: #14c0c9;
     color: white;
     padding: 10px;
+    margin-left: 5px;
 }
 .cur-lang:hover {
     color: gray;
@@ -81,13 +105,16 @@ body {
 /**/
 
 /*Main-Nav-Bar*/
+
 .main-nav-bar ul {
     list-style: none;
+    padding: 0;
 }
 .main-nav-bar ul li {
     display: inline;
     margin-right: 20px;
     font-size: 18px;
+    padding-left: 5px;
 }
 .main-nav-bar a {
     text-decoration: none;
@@ -96,12 +123,50 @@ body {
 .main-nav-bar a:hover {
     color: #14c0c9;
 }
+.main-nav-bar form {
+    float: right;
+}
+.main-nav-bar form input {
+    padding: 5px;
+}
+.main-nav-bar form button {
+    padding: 5px;
+}
 /**/
 
+/*Hero Img Carousel*/
+
+
+.hero {
+    /*background: #e5e6e3 url('../images/hero_bg.jpg');*/
+    background: #e6e6e3;
+    background: linear-gradient(to bottom, #e6e6e3 0%,#f0f0ed 50%,#c2c2c2 100%);
+    margin-bottom: 20px;
+}
 /**/
+
+/*Service Images*/
+
+.service-imgs {
+    padding-bottom: 50px;
+}
+/**/
+
+/*Sign Up*/
 .sign-up {
     background-color: #d4d4d4;
 }
+/**/
+
+/*Users info*/
 .user-info {
     background-color: #424a4a;
 }
+/**/
+
+/*Bottom-Bar*/
+
+.bottom-bar {
+    border-top: 1px solid;
+}
+/**/

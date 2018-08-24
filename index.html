@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bootstrap Project</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -17,10 +18,10 @@
                 <div class="top-bar-inner row">
                     <div class="col-sm-6">
                         <ul>
-                            <li><a href="#">My Wishlist</a></li>
-                            <li><a href="#">My Account</a></li>
-                            <li><a href="#">Shopping Cart</a></li>
-                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#"><i class="fas fa-edit"></i>My Wishlist</a></li>
+                            <li><a href="#"><i class="fas fa-user"></i>My Account</a></li>
+                            <li><a href="#"><i class="fas fa-shopping-cart"></i>Shopping Cart</a></li>
+                            <li><a href="#"><i class="fas fa-check"></i>Checkout</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6">
@@ -29,15 +30,33 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="nav-bar row">
+        <div class="nav-bar container">
+            <div class="nav-bar-inner row">
                 <div class="col-sm-6">
-                    <h1><img src="images/Venedor.jpg" alt="" class="img-responsive"></h1>
+                    <h1><img src="images/logo.jpg" alt="" class="img-responsive"></h1>
                 </div>
                 <div class="users-status col-sm-6">
                     <ul>
-                        <li><a href="#" class="cur-lang">US Dollar</a></li>
-                        <li><a href="#" class="cur-lang">English</a></li>
+                        <li>
+                            <form action="" class="cur-lang">
+                                <select name="currency">
+                                    <option value="us dolloar">US dolloar</option>
+                                    <option value="euro">Euro</option>
+                                    <option value="pound">Pound</option>
+                                    <option value="yen">Yen</option>
+                                </select>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="" class="cur-lang">
+                                <select name="language">
+                                    <option value="english">English</option>
+                                    <option value="spanish">Spanish</option>
+                                    <option value="portuguese">Portuguese</option>
+                                    <option value="chinese">Chinese</option>
+                                </select>
+                            </form>
+                        </li>
                         <li><a href="#" class="picked-items">0 itema(s) - $0.00</a></li>
                     </ul>
                 </div>
@@ -61,14 +80,16 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <img src="images/hero.jpg" alt="Hero" class="img-responsive">
+        <div class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <img src="images/hero-img-one.jpg" alt="Hero" class="img-responsive">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="service-imgs container">
             <div class="row">
                 <div class="col-sm-4">
                     <img src="images/freeshipping.jpg" alt="" class="img-responsive">
@@ -281,17 +302,17 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="bottom-bar container">
             <div class="row">
                 <div class="col-sm-6">
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"><img src="images/icon4.png" alt=""></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                    <a href="#"></a>
+                    <a href="#"><img src="images/social-icon1.jpg" alt=""></a>
+                    <a href="#"><img src="images/social-icon2.jpg" alt=""></a>
+                    <a href="#"><img src="images/social-icon3.jpg" alt=""></a>
+                    <a href="#"><img src="images/social-icon4.jpg" alt=""></a>
+                    <a href="#"><img src="images/social-icon5.jpg" alt=""></a>
+                    <a href="#"><img src="images/social-icon6.jpg" alt=""></a>
+                    <a href="#"><img src="images/social-icon7.jpg" alt=""></a>
+                    <a href="#"><img src="images/social-icon8.jpg" alt=""></a>
                 </div>
                 <div class="col-sm-6">
                     <p>&copy; 2012 by WooCommerce&trade;.All Rights Reserved.</p>
