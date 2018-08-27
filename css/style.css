@@ -5,6 +5,23 @@ body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: #14c0c9;
+}
+h2 {
+    padding-left: 10px;
+    border-left: 3px solid #14c0c9;
+}
+p {
+    color: gray;
+}
 /**/
 
 
@@ -12,10 +29,45 @@ body {
 
 
 .arrow {
-
+    margin-top: 20px;
+    margin-right: 1px;
+    padding: 5px 20px;
+    background-color: #fafafa;
+    color: gray;
+    border: 1px solid rgb(236, 227, 227);
+    border-radius: 1px;
+    font-size: 20px;
+    float: right;
+}
+.arrow:hover {
+    background-color: #14c0c9;
+    color: white;
+    border-color: #14c0c9;
 }
 .add-cart {
-
+    margin-top: 20px;
+    padding: 7px 16px;
+    background-color: #434a4a;
+    color: rgb(161, 161, 161);
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.add-cart:hover {
+    background-color: #14c0c9;
+    color: white;
+}
+.like-button {
+    margin-top: 20px;
+    padding: 3px 15px;
+    background-color: #14c0c9;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+.like-button:hover {
+    color: #424a4a;
 }
 /**/
 
@@ -28,27 +80,26 @@ body {
 .top-bar {
     padding-top: 5px;
     background-color: #f5f5f5;
+    border-top: 3px solid #14c0c9;
 }
 .top-bar-inner ul {
     padding: 0;
 }
-.top-bar-inner ul li {
+.top-bar-inner li {
     list-style: none;
     display: inline;
     margin-right: 15px;
     padding-left: 5px;
-}
-.top-bar-inner ul a {
-    text-decoration: none;
-    color: gray;
 }
 .top-bar-inner p {
     text-align: right;
     color: gray;
 }
 .top-bar-inner p a {
-    text-decoration: none;
     color: #14c0c9;
+}
+.top-bar-inner p a:hover {
+    text-decoration: underline;
 }
 .top-bar-inner li i {
     margin-right: 10px;
@@ -61,18 +112,15 @@ body {
 .nav-bar {
     padding-bottom: 10px;
 }
-.nav-bar-inner {
+.users-status-bar {
     padding-bottom: 20px;
 }
-.nav-bar-inner ul {
+.users-status-bar ul {
     list-style: none;
     text-align: right;
 }
-.nav-bar-inner ul li {
+.users-status-bar ul li {
     display: inline;
-}
-.nav-bar-inner a {
-    text-decoration: none;
 }
 .cur-lang {
     display: inline;
@@ -109,15 +157,17 @@ body {
 .main-nav-bar ul {
     list-style: none;
     padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 .main-nav-bar ul li {
     display: inline;
-    margin-right: 20px;
-    font-size: 18px;
+    margin-right: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
     padding-left: 5px;
 }
 .main-nav-bar a {
-    text-decoration: none;
     color: black;
 }
 .main-nav-bar a:hover {
@@ -141,7 +191,7 @@ body {
     /*background: #e5e6e3 url('../images/hero_bg.jpg');*/
     background: #e6e6e3;
     background: linear-gradient(to bottom, #e6e6e3 0%,#f0f0ed 50%,#c2c2c2 100%);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 /**/
 
@@ -152,21 +202,89 @@ body {
 }
 /**/
 
+/*Merch*/
+
+.merch {
+    margin-bottom: 40px;
+}
+.merch-type {
+    padding-bottom: 50px;
+}
+.product {
+    text-align: center;
+}
+.indent {
+    text-indent: 20px;
+}
+/**/
+
 /*Sign Up*/
 .sign-up {
     background-color: #d4d4d4;
+    padding: 25px 0;
+}
+.sign-up p {
+    margin-top: 6px;
+    color: black;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.sign-up form {
+    text-align: right;
+}
+.sign-up input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 200px;
+    margin-right: 6px;
+    border: 3px solid #fae01e;
+    border-radius: 3px;
+    background-color: #d4d4d4;
+    font-size: 15px;
+}
+.sign-up button {
+    padding: 9px 20px;
+    background-color: #434a4a;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.sign-up button:hover {
+    background-color: #14c0c9;
 }
 /**/
 
 /*Users info*/
 .user-info {
     background-color: #424a4a;
+    padding: 70px 0;
+    border-bottom: 1px solid black;
+}
+.user-info h3 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.user-info ul {
+    list-style-image: url("../images/square.jpg")
+}
+.user-info li {
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 /**/
 
 /*Bottom-Bar*/
 
 .bottom-bar {
-    border-top: 1px solid;
+    padding: 20px 0;
+    background-color: #424a4a;
+    border-top: 1px solid gray;
+}
+.bottom-bar {
+
 }
 /**/
