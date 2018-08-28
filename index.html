@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Bootstrap Project</title>
+        <link rel="shortcut icon"href="favicon.ico">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -18,7 +19,7 @@
                 <div class="top-bar-inner row">
                     <div class="col-sm-6">
                         <ul>
-                            <li><a href="#"><i class="fas fa-edit"></i>My Wishlist</a></li>
+                            <li><a href="#"><i class="fas fa-edit"></i>My Wishlist (0)</a></li>
                             <li><a href="#"><i class="fas fa-user"></i>My Account</a></li>
                             <li><a href="#"><i class="fas fa-shopping-cart"></i>Shopping Cart</a></li>
                             <li><a href="#"><i class="fas fa-check"></i>Checkout</a></li>
@@ -48,12 +49,11 @@
                                 <select name="language">
                                     <option value="english">English</option>
                                     <option value="spanish">Spanish</option>
-                                    <option value="portuguese">Portuguese</option>
                                     <option value="chinese">Chinese</option>
                                 </select>
                             </form>
                         </li>
-                        <li><a href="#" class="picked-items">0 itema(s) - $0.00</a></li>
+                        <li><a href="#" class="picked-items"><i class="fas fa-shopping-cart"></i> 0 itema(s) - $0.00</a></li>
                     </ul>
                 </div>
             </div>
@@ -104,8 +104,8 @@
                     <h2>Latest</h2>
                 </div>
                 <div class="col-sm-3">
-                    <button class="arrow">&gt;</button>
-                    <button class="arrow">&lt;</button>
+                    <button class="arrow"><i class="fas fa-caret-right"></i></button>
+                    <button class="arrow"><i class="fas fa-caret-left"></i></button>
                 </div>
                 <div class="col-sm-12">
                     <p>Buy discount items from latest collections of world brands.</p>
@@ -144,7 +144,7 @@
                         <div class="col-sm-12">
                             <p class="indent">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut inventore voluptate iusto nesciunt quasi vero unde in, excepturi nostrum ab necessitatibus nisi labore? Excepturi ullam aspernatur, blanditiis perspiciatis dolorum quos.</p>
                             <p class="indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, itaque adipisci molestiae voluptatibus nostrum commodi ipsum reprehenderit error ea similique provident natus dolorem voluptas. Inventore labore libero harum. Architecto, fugiat?</p>
-                            <a href="#">Buy Venedor Theme!</a>
+                            <a href="#" class="reverse-links">Buy Venedor Theme!</a>
                         </div>
                     </div>
                 </div>
@@ -159,8 +159,8 @@
                     <h2>Bestsellers</h2>
                 </div>
                 <div class="col-sm-3">
-                    <button class="arrow">&gt;</button>
-                    <button class="arrow">&lt;</button>
+                    <button class="arrow"><i class="fas fa-caret-right"></i></button>
+                    <button class="arrow"><i class="fas fa-caret-left"></i></button>
                 </div>
                 <div class="col-sm-12">
                     <p>Special offers and biggest discounts for the most popular products.</p>
@@ -195,8 +195,8 @@
                     <h2>Manufacturers</h2>
                 </div>
                 <div class="col-sm-3">
-                    <button class="arrow">&gt;</button>
-                    <button class="arrow">&lt;</button>
+                    <button class="arrow"><i class="fas fa-caret-right"></i></button>
+                    <button class="arrow"><i class="fas fa-caret-left"></i></button>
                 </div>
             </div>
             <div class="row">
@@ -262,12 +262,12 @@
                     </div>
                     <div class="col-sm-3">
                         <h3>From Twitter</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto expedita autem enim beatae accusamus iure <a href="#">http://lorem/lorem12345</a></p>
-                        <p>about 1 hour ago</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, quis simil <a href="#">http://lorem/123</a> tempore</p>
-                        <p>about 3 hours ago</p>
+                        <p class="twitter-replies">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto expedita autem enim beatae accusamus iure <a href="#" class="reverse-links">http://lorem/lorem12345</a></p>
+                        <p class="latest-replies">about 1 hour ago</p>
+                        <p class="twitter-replies">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, quis simil <a href="#" class="reverse-links">http://lorem/123</a> tempore</p>
+                        <p class="latest-replies">about 3 hours ago</p>
                     </div>
-                    <div class="col-sm-3">
+                    <div class="facebook-likes col-sm-3">
                         <div class="row">
                             <div class="col-sm-6">
                                 <h3>Facebook</h3>
@@ -276,8 +276,8 @@
                                 <button class="like-button"><i class="far fa-thumbs-up"></i> Like!</button>
                             </div>
                         </div>
-                        <p>1234 people like <a href="#">PromoKit</a></p>
-                        <div class="row">
+                        <p>1234 people like <a href="#" class="reverse-links">PromoKit</a></p>
+                        <div class="facebook-imgs row">
                             <div class="col-sm-4">
                                 <img src="images/fb1.jpg" alt="" class="img-responsive">
                                 <p>Anna</p>
@@ -291,7 +291,7 @@
                                 <p>Antuan</p>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="facebook-imgs row">
                             <div class="col-sm-4">
                                 <img src="images/fb4.jpg" alt="" class="img-responsive">
                                 <p>Milla</p>
