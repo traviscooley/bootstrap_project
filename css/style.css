@@ -33,7 +33,6 @@ p {
 
 /*Buttons*/
 
-
 .arrow {
     float: right;
     margin-top: 20px;
@@ -93,26 +92,50 @@ p {
     padding: 0;
 }
 .top-bar-inner li {
-    margin-right: 15px;
-    padding-left: 5px;
+    padding-left: 0;
+    margin-right: 10px;
     list-style: none;
     display: inline;
+}
+.top-bar-inner li i {
+    margin-right: 10px;
 }
 .top-bar-inner p {
     text-align: right;
     color: gray;
 }
-.top-bar-inner p a {
-    color: #14c0c9;
-}
-.top-bar-inner p a:hover {
-    text-decoration: underline;
-}
-.top-bar-inner li i {
-    margin-right: 10px;
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .top-bar-inner li {
+        list-style: none;
+        display: inline;
+        margin-right: 5px;
+        padding-left: 5px;
+    }
+    .top-bar-inner p {
+        text-align: right;
+        color: gray;
+    }
+    .top-bar-inner li i {
+        margin: 5px;
+    }
 }
 
-
+@media (min-width: 1200px) {
+    .top-bar-inner li {
+        list-style: none;
+        display: inline;
+        margin-right: 15px;
+        padding-left: 5px;
+    }
+    .top-bar-inner p {
+        text-align: right;
+        color: gray;
+    }
+    .top-bar-inner li i {
+        margin-right: 10px;
+    }
+}
 /**/
 
 
@@ -124,15 +147,19 @@ p {
 .users-status-bar {
     padding-bottom: 20px;
 }
+.users-status-bar img {
+    margin: 0;
+}
 .users-status-bar ul {
-    text-align: right;
+    padding: 0px;
+    text-align: left;
     list-style: none;
 }
 .users-status-bar ul li {
     display: inline;
 }
 .users-status {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .cur-lang {
     margin-right: 1px;
@@ -159,7 +186,94 @@ p {
 .picked-items:hover {
     color: white;
 }
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+    .users-status-bar {
+        padding-bottom: 20px;
+    }
+    .users-status-bar ul {
+        text-align: right;
+        list-style: none;
+    }
+    .users-status-bar ul li {
+        display: inline;
+    }
+    .users-status {
+        margin-top: 50px;
+    }
+    .cur-lang {
+        margin-right: 1px;
+        display: inline;
+    }
+    .cur-lang select {
+        padding: 10px;
+        -webkit-appearance: none;
+        border: none;
+        background: #f5f5f5;
+        color: gray;
+        text-align: center;
+        cursor: pointer;
+    }
+    .cur-lang:hover {
+        color: gray;
+    }
+    .picked-items {
+        padding: 10px;
+        margin-left: 5px;
+        background-color: #14c0c9;
+        color: white;
+    }
+    .picked-items:hover {
+        color: white;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-bar {
+        padding-bottom: 10px;
+    }
+    .users-status-bar {
+        padding-bottom: 20px;
+    }
+    .users-status-bar ul {
+        text-align: right;
+        list-style: none;
+    }
+    .users-status-bar ul li {
+        display: inline;
+    }
+    .users-status {
+        margin-top: 50px;
+    }
+    .cur-lang {
+        margin-right: 1px;
+        display: inline;
+    }
+    .cur-lang select {
+        padding: 10px;
+        -webkit-appearance: none;
+        border: none;
+        background: #f5f5f5;
+        color: gray;
+        text-align: center;
+        cursor: pointer;
+    }
+    .cur-lang:hover {
+        color: gray;
+    }
+    .picked-items {
+        padding: 10px;
+        margin-left: 5px;
+        background-color: #14c0c9;
+        color: white;
+    }
+    .picked-items:hover {
+        color: white;
+    }
+}
 /**/
+
 
 /*Main-Nav-Bar*/
 
@@ -168,11 +282,13 @@ p {
     margin-top: 10px;
     margin-bottom: 0;
     list-style: none;
+    text-align: center;
 }
-.main-nav-bar ul li {
+.main-nav-bar li {
     padding-left: 5px;
-    margin-right: 25px;
-    display: inline;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -183,18 +299,79 @@ p {
     color: #14c0c9;
 }
 .main-nav-bar form {
-    float: right;
+    text-align: center;
 }
 .main-nav-bar form input {
-    padding: 5px;
+    padding-top: 5px;
+    padding-right: 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
 }
 .main-nav-bar form button {
     padding: 5px;
 }
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+    .main-nav-bar ul {
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    .main-nav-bar li {
+        margin-right: 5px;
+        display: inline;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .main-nav-bar form {
+        text-align: right;
+    }
+    .main-nav-bar input {
+        padding: 3px 5px;
+        border-color: 1px solid gray;
+    }
+    .main-nav-bar button {
+        padding: 6px;
+    }
+}
+@media (min-width: 1200px) {
+
+    .main-nav-bar ul {
+        text-align: left;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    .main-nav-bar li {
+        padding-left: 5px;
+        margin-right: 25px;
+        display: inline;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    .main-nav-bar a {
+        color: black;
+    }
+    .main-nav-bar a:hover {
+        color: #14c0c9;
+    }
+    .main-nav-bar form {
+        text-align: right;
+    }
+    .main-nav-bar form input {
+        padding: 5px;
+    }
+    .main-nav-bar form button {
+        padding: 5px;
+    }
+}
 /**/
 
-/*Hero Img Carousel*/
 
+/*Hero Img Carousel*/
 
 .hero {
     margin-bottom: 25px;
@@ -203,12 +380,14 @@ p {
 }
 /**/
 
+
 /*Service Images*/
 
 .service-imgs {
     padding-bottom: 50px;
 }
 /**/
+
 
 /*Merch*/
 
@@ -230,15 +409,18 @@ p {
 }
 /**/
 
+
 /*Sign Up*/
+
 .sign-up {
     padding: 25px 0;
     background-color: #d4d4d4;
 }
 .sign-up p {
+    text-align: center;
     margin-top: 6px;
     color: black;
-    font-size: 24px;
+    font-size: 15px;
     text-transform: uppercase;
 }
 .sign-up form {
@@ -248,7 +430,7 @@ p {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
-    padding-right: 200px;
+    padding-right: 15px;
     margin-right: 6px;
     border: 3px solid #fae01e;
     border-radius: 3px;
@@ -267,6 +449,66 @@ p {
 .sign-up button:hover {
     background-color: #14c0c9;
 }
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+    .sign-up p {
+        margin-top: 6px;
+        color: black;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    .sign-up input {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 200px;
+        margin-right: 6px;
+        border: 3px solid #fae01e;
+        border-radius: 3px;
+        background-color: #d4d4d4;
+        font-size: 15px;
+    }
+    .sign-up button {
+        padding: 9px 20px;
+        border: none;
+        border-radius: 3px;
+        background-color: #434a4a;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .sign-up p {
+        margin-top: 6px;
+        color: black;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    .sign-up input {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 200px;
+        margin-right: 6px;
+        border: 3px solid #fae01e;
+        border-radius: 3px;
+        background-color: #d4d4d4;
+        font-size: 15px;
+    }
+    .sign-up button {
+        padding: 9px 20px;
+        border: none;
+        border-radius: 3px;
+        background-color: #434a4a;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}
 /**/
 
 /*Users info*/
@@ -276,6 +518,7 @@ p {
     background-color: #424a4a;
 }
 .user-info h3 {
+    font-size: 20px;
     margin-bottom: 20px;
     color: rgb(207, 207, 207);
     text-transform: uppercase;
@@ -295,6 +538,7 @@ p {
 .user-info li a:hover {
     color: #14c0c9;
 }
+
 .twitter-replies {
     color: rgb(161, 161, 161);
 }
@@ -307,6 +551,14 @@ p {
 .facebook-imgs {
     text-align: center;
 }
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
 /**/
 
 /*Bottom-Bar*/
@@ -315,10 +567,36 @@ p {
     padding: 20px 0;
     border-top: 1px solid gray;
     background-color: #424a4a;
+    text-align: center;
 }
 .bottom-bar p {
-    text-align: right;
-    margin-top: 10px;
+    margin-top: 50px;
     color: rgb(161, 161, 161);
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .bottom-bar {
+        padding: 20px 0;
+        border-top: 1px solid gray;
+        background-color: #424a4a;
+    }
+    .bottom-bar p {
+        text-align: right;
+        margin-top: 10px;
+        color: rgb(161, 161, 161);
+    }
+}
+
+@media (min-width: 1200px) {
+    .bottom-bar {
+        padding: 20px 0;
+        border-top: 1px solid gray;
+        background-color: #424a4a;
+    }
+    .bottom-bar p {
+        text-align: right;
+        margin-top: 10px;
+        color: rgb(161, 161, 161);
+    }
 }
 /**/
