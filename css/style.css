@@ -52,7 +52,7 @@ p {
 }
 .add-cart {
     margin-top: 20px;
-    padding: 7px 16px;
+    padding: 6px 12px;
     border: none;
     border-radius: 3px;
     background-color: #434a4a;
@@ -74,6 +74,75 @@ p {
 }
 .like-button:hover {
     color: #424a4a;
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+    .arrow {
+        float: right;
+        margin-top: 20px;
+        margin-right: 1px;
+        padding: 0px 18px;
+        border: 1px solid rgb(236, 227, 227);
+        border-radius: 1px;
+        background-color: #fafafa;
+        color: gray;
+        border-radius: 1px;
+        font-size: 30px;
+    }
+    .add-cart {
+        margin-top: 20px;
+        padding: 7px 16px;
+        border: none;
+        border-radius: 3px;
+        background-color: #434a4a;
+        color: rgb(161, 161, 161);
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .like-button {
+        margin-top: 20px;
+        margin-left: 5px;
+        padding: 0px 15px;
+        background-color: #14c0c9;
+        color: white;
+        border: none;
+        border-radius: 2px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .arrow {
+        float: right;
+        margin-top: 20px;
+        margin-right: 1px;
+        padding: 0px 18px;
+        border: 1px solid rgb(236, 227, 227);
+        border-radius: 1px;
+        background-color: #fafafa;
+        color: gray;
+        border-radius: 1px;
+        font-size: 30px;
+    }
+    .add-cart {
+        margin-top: 20px;
+        padding: 7px 16px;
+        border: none;
+        border-radius: 3px;
+        background-color: #434a4a;
+        color: rgb(161, 161, 161);
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .like-button {
+        margin-top: 20px;
+        padding: 3px 15px;
+        background-color: #14c0c9;
+        color: white;
+        border: none;
+        border-radius: 2px;
+    }
 }
 /**/
 
@@ -291,6 +360,7 @@ p {
     display: inline-block;
     font-size: 16px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 .main-nav-bar a {
     color: black;
@@ -321,9 +391,9 @@ p {
     }
     .main-nav-bar li {
         margin-right: 5px;
-        display: inline;
         font-size: 16px;
         text-transform: uppercase;
+        font-weight: bold;
     }
     .main-nav-bar form {
         text-align: right;
@@ -455,14 +525,15 @@ p {
     .sign-up p {
         margin-top: 6px;
         color: black;
-        font-size: 24px;
+        font-size: 15px;
         text-transform: uppercase;
+        font-weight: bold;
     }
     .sign-up input {
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 15px;
-        padding-right: 200px;
+        padding-right: 15px;
         margin-right: 6px;
         border: 3px solid #fae01e;
         border-radius: 3px;
@@ -553,7 +624,17 @@ p {
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
-
+    .user-info h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: rgb(207, 207, 207);
+        text-transform: uppercase;
+    }
+    .user-info li {
+        margin-bottom: 15px;
+        color: rgb(161, 161, 161);
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -567,11 +648,15 @@ p {
     padding: 20px 0;
     border-top: 1px solid gray;
     background-color: #424a4a;
+}
+.bottom-bar img {
+    margin-right: 5px;
     text-align: center;
 }
 .bottom-bar p {
     margin-top: 50px;
     color: rgb(161, 161, 161);
+    text-align: center;
 }
 
 @media (min-width: 768px) and (max-width: 990px) {
@@ -579,6 +664,9 @@ p {
         padding: 20px 0;
         border-top: 1px solid gray;
         background-color: #424a4a;
+    }
+    .bottom-bar img {
+        text-align: left;
     }
     .bottom-bar p {
         text-align: right;
@@ -588,10 +676,14 @@ p {
 }
 
 @media (min-width: 1200px) {
+
     .bottom-bar {
         padding: 20px 0;
         border-top: 1px solid gray;
         background-color: #424a4a;
+    }
+    .bottom-bar img {
+        text-align: left;
     }
     .bottom-bar p {
         text-align: right;
